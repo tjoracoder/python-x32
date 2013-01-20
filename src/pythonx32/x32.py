@@ -124,7 +124,6 @@ class BehringerX32(object):
             key, value = my_tuple
             if self._verbose and index % 100 == 0:
                 print "Writing parameter %d of %d to x32" % (index, len(state))
-            print "%s: %s" % (key, value)
             self.set_value(path=key, value=[value], readback=True)
         return
             
